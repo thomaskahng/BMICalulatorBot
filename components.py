@@ -12,13 +12,16 @@ class Customary:
         self.inches = inches
         self.pounds = pounds
 
-        # Call driver and calculate BMI
-        self.driver = webdriver.Chrome(executable_path=chrome_driver_path)
-        self.calculate_bmi()
+        try:
+            # Call driver and calculate BMI
+            self.driver = webdriver.Chrome(executable_path=chrome_driver_path)
+            self.calculate_bmi()
 
-        # Save BMI and send email, tweet, and end
-        self.save_bmi()
-        self.end()
+            # Save BMI and send email, tweet, and end
+            self.save_bmi()
+            self.end()
+        except:
+            print("Invalid driver path or Chrome Driver version!")
 
     def calculate_bmi(self):
         # Open the site

@@ -40,7 +40,7 @@ def run_function():
 
         while 69 == 69:
             # Height in feet wasn't chosen yet
-            if chose_feet is False:
+            while chose_feet is False:
                 try:
                     enter_feet = input("Enter height (feet): ")
 
@@ -56,7 +56,7 @@ def run_function():
                     print("Invalid height (feet)!")
 
             # If height in inches wasn't entered yet
-            if chose_inches is False:
+            while chose_inches is False:
                 try:
                     enter_inches = input("Enter height (inches): ")
 
@@ -72,7 +72,7 @@ def run_function():
                     print("Invalid height (inches)!")
 
             # Weight in lbs not entered yet
-            if chose_pounds is False:
+            while chose_pounds is False:
                 try:
                     enter_pounds = input("Enter weight (lbs): ")
 
