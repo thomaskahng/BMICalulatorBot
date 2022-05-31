@@ -1,3 +1,6 @@
+# Pre Execution Steps
+[Download Chrome Driver for your current Chrome verson here](https://chromedriver.chromium.org/downloads)
+
 # Sample Input
 
 ![Screenshot 2022-05-30 190621](https://user-images.githubusercontent.com/76675748/171069949-8c34469e-1a8e-4d50-b4fc-ce5a46f0c20c.png)
